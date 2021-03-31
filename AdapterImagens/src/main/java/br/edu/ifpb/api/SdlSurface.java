@@ -1,0 +1,13 @@
+package br.edu.ifpb.api;
+
+public class SdlSurface {
+
+    public void SDL_CarregarSurface(String arquivo) {
+        System.out.println("Imagem " + arquivo + " carregada.");
+    }
+
+    public void SDL_DesenharSurface(int largura, int altura, int posicaoX,
+                                    int posicaoY) {
+        System.out.println("SDL_Surface desenhada");
+    }
+}

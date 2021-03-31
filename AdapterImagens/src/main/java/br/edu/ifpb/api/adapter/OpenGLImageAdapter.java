@@ -1,0 +1,17 @@
+package br.edu.ifpb.api.adapter;
+
+import br.edu.ifpb.api.OpenGLImage;
+
+public class OpenGLImageAdapter extends OpenGLImage implements ImagemTarget {
+
+    @Override
+    public void carregarImagem(String nomeDoArquivo) {
+        glCarregarImagem(nomeDoArquivo);
+    }
+
+    @Override
+    public void desenharImagem(int posX, int posY, int largura, int altura) {
+        glDesenharImagem(posX,posY);
+
+    }
+}
